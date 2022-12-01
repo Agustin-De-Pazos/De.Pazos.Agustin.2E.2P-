@@ -24,10 +24,12 @@ namespace Forms
 
         private void MenuProfesor_Load(object sender, EventArgs e)
         {
-
             List<Materia> aux = DaoMateria.GetMatariasProfesor(_profe.Id);
-            bindingSource.DataSource = aux;
-            dgv_Profesor.DataSource = bindingSource;
+            if(aux.Count() != 0)
+            {
+                    bindingSource.DataSource = aux;
+                    dgv_Profesor.DataSource = bindingSource;
+            }
         }
 
         private void btn_NotaExamen_Click(object sender, EventArgs e)
@@ -69,8 +71,12 @@ namespace Forms
 
         private void btn_materias_Click(object sender, EventArgs e)
         {
-            bindingSource.DataSource = DaoMateria.GetMatariasProfesor(_profe.Id);
-            dgv_Profesor.DataSource = bindingSource;
+            List<Materia> aux = DaoMateria.GetMatariasProfesor(_profe.Id);
+            if (aux.Count() != 0)
+            {
+                bindingSource.DataSource = aux;
+                dgv_Profesor.DataSource = bindingSource;
+            }
         }
     }
 }

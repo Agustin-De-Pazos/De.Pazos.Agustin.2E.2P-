@@ -24,7 +24,7 @@ namespace Forms
             {
                 if (!Dao.ValidarMateria(txt_materiaAlta.Text))
                 {
-                    if (Dao.AgregarMateria(txt_materiaAlta.Text, cmb_altaCuatrimestre.SelectedIndex))
+                    if (DaoMateria.AgregarMateria(txt_materiaAlta.Text, cmb_altaCuatrimestre.SelectedIndex))
                     {
                         MessageBox.Show("Agregado");
                     }

@@ -21,7 +21,6 @@ namespace Forms
         private void btn_alta_Click(object sender, EventArgs e)
         {
             int aux;
-            Usuario? auxU;
             if (ValidoIngresoAlta())
             {
                 aux = int.Parse(txt_altaDni.Text);

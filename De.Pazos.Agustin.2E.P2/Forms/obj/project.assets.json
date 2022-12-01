@@ -528,11 +528,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\Forms\\Forms.csproj",
+      "projectUniqueName": "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\Forms\\Forms.csproj",
       "projectName": "Forms",
-      "projectPath": "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\Forms\\Forms.csproj",
+      "projectPath": "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\Forms\\Forms.csproj",
       "packagesPath": "C:\\Users\\Agus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\Forms\\obj\\",
+      "outputPath": "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\Forms\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Agus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -549,11 +549,11 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\Entidades\\Entidades.csproj"
+            "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\Entidades\\Entidades.csproj"
             },
-            "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\IO\\IO.csproj": {
-              "projectPath": "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\IO\\IO.csproj"
+            "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\IO\\IO.csproj": {
+              "projectPath": "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\IO\\IO.csproj"
             }
           }
         }

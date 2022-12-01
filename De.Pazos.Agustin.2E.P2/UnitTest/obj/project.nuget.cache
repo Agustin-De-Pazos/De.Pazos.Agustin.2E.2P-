@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jxNTNEx2pDT+c7ZuUNal8nZpnSnVtGg6sJfsXzqAZyhJvf4U9+jgN2ioq8NQxhqDfB3fQ1FC8TN+tje6yqjdYQ==",
+  "dgSpecHash": "v3S6/iOY+alhJ5HOCBY+K03fZFiGBtELkx2W4QTtyXV6wo6NH/G3MNTBlrPQlzQ1qK73NlWHINknGQsS/V7kPA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\UnitTest\\UnitTest.csproj",
+  "projectFilePath": "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\UnitTest\\UnitTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Agus\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\Agus\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",

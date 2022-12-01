@@ -475,11 +475,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\Entidades\\Entidades.csproj",
+      "projectUniqueName": "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\Entidades\\Entidades.csproj",
       "projectName": "Entidades",
-      "projectPath": "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\Entidades\\Entidades.csproj",
+      "projectPath": "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\Entidades\\Entidades.csproj",
       "packagesPath": "C:\\Users\\Agus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\Entidades\\obj\\",
+      "outputPath": "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\Entidades\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Agus\\AppData\\Roaming\\NuGet\\NuGet.Config",

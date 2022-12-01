@@ -25,6 +25,33 @@ namespace Entidades
         }
 
 
+        public static bool AgregarMateria(string nombre, int cuatrimestre)//AGREGA MATERIA
+        {
+            bool todoOk = false;
+            try
+            {
+                _sqlCommand.Parameters.Clear();
+                _sqlConnection.Open();
+                _sqlCommand.CommandText = $"INSERT INTO Materia (nombreMateria,cuatrimestre,correlativas,estadoProfesor) VALUES (@nombre,@cuatrimestre,'No',0)";
+                _sqlCommand.Parameters.AddWithValue("@nombre", nombre);
+                _sqlCommand.Parameters.AddWithValue("@cuatrimestre", cuatrimestre);
+                _sqlCommand.ExecuteNonQuery();
+                todoOk = true;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                if (_sqlConnection.State == System.Data.ConnectionState.Open)
+                {
+                    _sqlConnection.Close();
+                }
+            }
+            return todoOk;
+        }
         public static List<Materia> GetListMaterias()
         {
             List<Materia> materias = new List<Materia>();
@@ -56,6 +83,9 @@ namespace Entidades
             }
             return materias;
         }
+        /// <summary>
+        /// Retorna una lista de materias que no tengan un profesor asignado
+        /// </summary>
         public static List<string> GetNombreMateriasSinAsignar()
         {
             List<string> nombresMaterias = new List<string>();
@@ -91,6 +121,9 @@ namespace Entidades
         }
 
 
+        /// <summary>
+        /// retorna una lista de nombre de materias que tengan un profesor
+        /// </summary>
         public static List<string> GetNombreMateriasConProfesor()
         {
             List<string> nombresMaterias = new List<string>();
@@ -125,7 +158,7 @@ namespace Entidades
             return nombresMaterias;
         }
 
-        public static bool ModificarEstadoProfesor(string nombreMateria, string nombreCompleto)//REVISAR
+        public static bool ModificarEstadoProfesor(string nombreMateria, string nombreCompleto)
         {
             bool todoOk = false;
             int idProfesor = 0;
@@ -134,14 +167,10 @@ namespace Entidades
             {
                 _sqlCommand.Parameters.Clear();
                 _sqlConnection.Open();
-                _sqlCommand.CommandText = $"UPDATE Materia set Materia.idProfesor = @idProfesor where nombreMateria = @nombre";
+                _sqlCommand.CommandText = $"UPDATE Materia set Materia.idProfesor = @idProfesor ,Materia.estadoProfesor = @estadoProfesor where nombreMateria = @nombre";
                 _sqlCommand.Parameters.AddWithValue("@idProfesor", idProfesor);
                 _sqlCommand.Parameters.AddWithValue("@nombre", nombreMateria);
-                _sqlCommand.ExecuteNonQuery();
-                _sqlCommand.Parameters.Clear();
-                _sqlCommand.CommandText = $"UPDATE Materia set Materia.estadoProfesor = @estadoProfesor where nombreMateria = @nombre";
                 _sqlCommand.Parameters.AddWithValue("@estadoProfesor", 1);
-                _sqlCommand.Parameters.AddWithValue("@nombre", nombreMateria);
                 _sqlCommand.ExecuteNonQuery();
                 todoOk = true;
             }
@@ -181,8 +210,6 @@ namespace Entidades
                         }
                     }
                 }
-                //_sqlCommand.ExecuteNonQuery();
-
             }
             catch (Exception)
             {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zSpQSDBh8UNSs3AFG5UjcVpugd2VJYqET/NiHjoYCQy334AxnuGsmJJp6+nX8DnMajut/SgUoGwD3pBLn6Onzw==",
+  "dgSpecHash": "e6F6YQx6yARFjIF7qHfdP+5Xz0TMBdEWC+O9mKT2V3zD9Msch1fUxTT4TZw8L6XKKTxar705uktBsp9/raRWCg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\Forms\\Forms.csproj",
+  "projectFilePath": "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\Forms\\Forms.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Agus\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Agus\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\IO\\IO.csproj": {}
+    "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\IO\\IO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\Entidades\\Entidades.csproj",
+        "projectPath": "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\Entidades\\Entidades.csproj",
         "packagesPath": "C:\\Users\\Agus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\Entidades\\obj\\",
+        "outputPath": "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Agus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\Excepciones\\Excepciones.csproj": {
+    "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\Excepciones\\Excepciones.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\Excepciones\\Excepciones.csproj",
+        "projectUniqueName": "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\Excepciones\\Excepciones.csproj",
         "projectName": "Excepciones",
-        "projectPath": "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\Excepciones\\Excepciones.csproj",
+        "projectPath": "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\Excepciones\\Excepciones.csproj",
         "packagesPath": "C:\\Users\\Agus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\Excepciones\\obj\\",
+        "outputPath": "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\Excepciones\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Agus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -120,14 +120,14 @@
         }
       }
     },
-    "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\IO\\IO.csproj": {
+    "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\IO\\IO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\IO\\IO.csproj",
+        "projectUniqueName": "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\IO\\IO.csproj",
         "projectName": "IO",
-        "projectPath": "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\IO\\IO.csproj",
+        "projectPath": "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\IO\\IO.csproj",
         "packagesPath": "C:\\Users\\Agus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\IO\\obj\\",
+        "outputPath": "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\IO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Agus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -144,11 +144,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\Entidades\\Entidades.csproj"
+              "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\Entidades\\Entidades.csproj"
               },
-              "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\Excepciones\\Excepciones.csproj": {
-                "projectPath": "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\Excepciones\\Excepciones.csproj"
+              "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\Excepciones\\Excepciones.csproj": {
+                "projectPath": "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\Excepciones\\Excepciones.csproj"
               }
             }
           }

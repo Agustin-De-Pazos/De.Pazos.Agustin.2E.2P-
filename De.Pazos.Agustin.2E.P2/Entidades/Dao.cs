@@ -7,51 +7,6 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    #region SCRIPT TABLAS CAMBIAR
-        /*CREATE TABLE [dbo].[Usuario](
-    [id] [int] IDENTITY(1,1) NOT NULL,
-    [idRol] [int] NOT NULL,
-    [nombre] [varchar](50) NOT NULL,
-    [apellido] [varchar](50) NOT NULL,
-    [dni] [int] NOT NULL,
-    [pass] [varchar](50) NOT NULL,
-    [gmail] [varchar](50) NOT NULL
-    CONSTRAINT [PK_Usuario2] PRIMARY KEY CLUSTERED 
-    (
-    [id] ASC
-    )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
-    ) ON [PRIMARY]
-
-    CREATE TABLE [dbo].[Roles](
-    [id] [int] NOT NULL,
-    [rol] [varchar](50) NOT NULL);
-
-    CREATE TABLE [dbo].[MateriaCursada](
-    [idAlumno] [int] NOT NULL,
-    [nombreMateriaC] [varchar](50) NOT NULL,
-    [notaPrimerParcial] [int] NULL,
-    [notaSegundoParcial] [int] NULL,
-    [asistencia] [int] NOT NULL,
-    [regularidad] [int] NOT NULL,
-    [estadoCursada] [int] NOT NULL,
-    [notaFinal] [int] NULL)
-
-
-    CREATE TABLE [dbo].[Materia](
-    [idMateria] [int] IDENTITY(1,1) NOT NULL,
-    [nombre] [varchar](50) NOT NULL,
-    [cuatrimestre] [int] NOT NULL,
-    [correlativas] [varchar](50) NULL,
-    [estadoProfesor] [int] NULL,
-    [idProfesor] [int] NULL);
-
-    CREATE TABLE [dbo].[Examen](
-    [id] [int] IDENTITY(1,1) NOT NULL,
-    [fecha] [date] NOT NULL,
-    [nombre] [varchar](50) NOT NULL,
-    [materia] [varchar](50) NOT NULL,
-    [idProfesor] [int] NOT NULL)*/
-    #endregion// CAMBIAR
 
     public static class Dao
     {
@@ -314,33 +269,7 @@ namespace Entidades
             }
             return todoOk;
         }
-        public static bool AgregarMateria(string nombre, int cuatrimestre)//AGREGA MATERIA
-        {
-            bool todoOk = false;
-            try
-            {
-                _sqlCommand.Parameters.Clear();
-                _sqlConnection.Open();
-                _sqlCommand.CommandText = $"INSERT INTO Materia (nombreMateria,cuatrimestre,correlativas,estadoProfesor) VALUES (@nombre,@cuatrimestre,'No',0)";
-                _sqlCommand.Parameters.AddWithValue("@nombre", nombre);
-                _sqlCommand.Parameters.AddWithValue("@cuatrimestre", cuatrimestre);
-                _sqlCommand.ExecuteNonQuery();
-                todoOk = true;
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-            finally
-            {
-                if (_sqlConnection.State == System.Data.ConnectionState.Open)
-                {
-                    _sqlConnection.Close();
-                }
-            }
-            return todoOk;
-        }
+        
 
 
         public static List<Admin> GetAdmin()

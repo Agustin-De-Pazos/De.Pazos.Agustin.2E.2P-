@@ -52,7 +52,6 @@ namespace Entidades
             if (nombreMateria is not null && nombreAlumno is not null)
             {
                 unAlumno = DaoAlumno.GetAlumnoNombreCompleto(nombreAlumno);
-
                 //DaoAlumno.GetAlumnoActualizar()
                 if (unAlumno is not null)
                 {
@@ -105,11 +104,10 @@ namespace Entidades
                 {
                     notaFinal = CalcularPromedio(primerNota, segundaNota);
                 }
-                if (DaoProfesor.modificarMateria(primerNota, segundaNota, notaFinal, nombreMateria, mensaje ?? "", unAlumno!.Id) > 3)
+                if (DaoProfesor.modificarMateria(primerNota, segundaNota, notaFinal, nombreMateria, mensaje ?? "", unAlumno!.Id) == 0)
                 {
-                    mensaje = $"{mensaje}  Cambio realizado";
+                    mensaje = $"No se pudo guardar en la base de datos";
                 }
-
             }
             else
             {
@@ -150,14 +148,6 @@ namespace Entidades
         public static bool operator !=(List<Profesor> p, Profesor a)
         {
             return !(p == a);
-        }
-        public override int GetHashCode()
-        {
-            return base.GetHashCode();
-        }
-        public override bool Equals(object? obj)
-        {
-            return base.Equals(obj);
         }
     }
 }

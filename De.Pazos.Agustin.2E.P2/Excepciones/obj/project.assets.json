@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\Excepciones\\Excepciones.csproj",
+      "projectUniqueName": "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\Excepciones\\Excepciones.csproj",
       "projectName": "Excepciones",
-      "projectPath": "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\Excepciones\\Excepciones.csproj",
+      "projectPath": "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\Excepciones\\Excepciones.csproj",
       "packagesPath": "C:\\Users\\Agus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Agus\\source\\repos\\De.Pazos.Agustin.2E.P2\\Excepciones\\obj\\",
+      "outputPath": "C:\\Users\\Agus\\Desktop\\De.Pazos.Agustin.2E.2P-\\De.Pazos.Agustin.2E.P2\\Excepciones\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Agus\\AppData\\Roaming\\NuGet\\NuGet.Config",

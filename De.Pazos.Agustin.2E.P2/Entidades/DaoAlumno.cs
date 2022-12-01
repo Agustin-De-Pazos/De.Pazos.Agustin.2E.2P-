@@ -25,6 +25,9 @@ namespace Entidades
             _sqlCommand.CommandType = System.Data.CommandType.Text;
         }
 
+        /// <summary>
+        /// Busca en la base de datos la cantidad de materias que esta en estado cursando por el id pasado por parametro
+        /// </summary>
         public static int cantidadMateriasAlumno(int idAlumno)
         {
             int cantidadM = 0;
@@ -55,6 +58,11 @@ namespace Entidades
             }
             return cantidadM;
         }
+        /// <summary>
+        /// Actualiza el alumno pasado por parametro agregandole todas las materias que tiene registradas
+        /// </summary>
+        /// <param name="alumno"></param>
+        /// <returns></returns>
         public static bool GetAlumnoActualizar(Alumno? alumno)
         {
             bool todoOk = false;
@@ -91,42 +99,14 @@ namespace Entidades
             return todoOk;
         }
 
-        public static List<Alumno> GetAlumno()
-        {
-            List<Alumno> alumnos = new List<Alumno>();
-            try
-            {
-                _sqlCommand.Parameters.Clear();
-                _sqlConnection.Open();
-                _sqlCommand.CommandText = $"SELECT * FROM Usuario inner join Roles on Usuario.idRol = Roles.id WHERE Roles.rol = 'Alumno'";
 
-                SqlDataReader sqlDataReader = _sqlCommand.ExecuteReader();
-                while (sqlDataReader.Read())
-                {
-                    Alumno alumno = (Alumno)sqlDataReader;
-                    if (!(alumnos == alumno))
-                    {
-                        alumnos.Add(alumno);
-                    }
-                }
-                //_sqlCommand.ExecuteNonQuery();
 
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-            finally
-            {
-                if (_sqlConnection.State == System.Data.ConnectionState.Open)
-                {
-                    _sqlConnection.Close();
-                }
-            }
-            return alumnos;
-        }
-
+        /// <summary>
+        /// Actualiza en la base de datos la asistencia de la materia y el alumno pasada por parametros
+        /// </summary>
+        /// <param name="nombreMateria"></param>
+        /// <param name="idAlumn"></param>
+        /// <returns></returns>
         public static bool DarAsistencia(string nombreMateria, int idAlumn)
         {
             bool todoOk = false;
@@ -156,6 +136,11 @@ namespace Entidades
             }
             return todoOk;
         }
+        /// <summary>
+        /// Retorna el alumno buscandolo por el nombre completo
+        /// </summary>
+        /// <param name="nombreCompleto"></param>
+        /// <returns></returns>
         public static Alumno? GetAlumnoNombreCompleto(string nombreCompleto)
         {
             Alumno? alumno = null;
@@ -188,6 +173,9 @@ namespace Entidades
         }
 
         
+        /// <summary>
+        /// retorna una lista de alumnos que estan cursando la materia pasada por parametros
+        /// </summary>
         public static List<Alumno> listaAlumnosCursandoMateria(string nombreMateria)
         {
 

@@ -12,11 +12,12 @@ namespace Forms
 {
     public partial class ExportarAlumnos : Form
     {
+        
         private SaveFileDialog saveFileDialog;
-        private static string rutaArchivo;
         private ExtJson<List<Alumno>> extJson;
         private ExtCsv<string> extCsv;
         private string? ultimoArchivo;
+        //private static string rutaArchivo;
         public ExportarAlumnos()
         {
             InitializeComponent();

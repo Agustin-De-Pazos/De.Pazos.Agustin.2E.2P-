@@ -24,6 +24,9 @@ namespace Entidades
             _sqlCommand.CommandType = System.Data.CommandType.Text;
         }
 
+        /// <summary>
+        /// Retorna el id del profesor por su nombre completo
+        /// </summary>
         public static int GetIdProfesorPorNombre(string nombreCompleto)
         {
             int aux = 0;
@@ -53,6 +56,9 @@ namespace Entidades
             }
             return aux;
         }
+        /// <summary>
+        /// retorna una lista de profesores
+        /// </summary>
         public static List<Profesor> GetProfesores()
         {
             List<Profesor> profesores = new List<Profesor>();
@@ -71,8 +77,6 @@ namespace Entidades
                         profesores.Add(profesor);
                     }
                 }
-                //_sqlCommand.ExecuteNonQuery();
-
             }
             catch (Exception)
             {
@@ -89,6 +93,9 @@ namespace Entidades
             return profesores;
         }
 
+        /// <summary>
+        /// retorna una lista de nombre de materias que dicta el profesor pasado el id por parametro
+        /// </summary>
         public static List<string> GetProfesorMaterias(int idProfe)
         {
             List<string> materiasNombre = new List<string>();
@@ -106,7 +113,6 @@ namespace Entidades
                     string aux = sqlDataReader["nombreMateria"].ToString() ?? "";
                     materiasNombre.Add(aux);
                 }
-                //_sqlCommand.ExecuteNonQuery();
 
             }
             catch (Exception)
@@ -159,6 +165,9 @@ namespace Entidades
             }
             return alumnos;
         }
+        /// <summary>
+        /// REtorna una lista de nombre de materias de todos los profesores que asignado a alguna
+        /// </summary>
         public static List<string> GetMateriasProfesores()
         {
             List<string> materiasNombre = new List<string>();
@@ -240,6 +249,9 @@ namespace Entidades
             return modificaciones;
         }
 
+        /// <summary>
+        /// Crea un examen con los datos pasados por parametros
+        /// </summary>
         public static bool CrearExamen(DateTime fecha, string nombreExamen, string nombreMateria, int idProfesor)
         {
             bool todoOk = false;
@@ -269,6 +281,9 @@ namespace Entidades
             return todoOk;
         }
 
+        /// <summary>
+        /// retorna una lista de examenes por el id del profesor
+        /// </summary>
         public static List<Examen> GetExamenesProfesor(int idProfe)
         {
             List<Examen> examenes = new List<Examen>();
@@ -302,6 +317,9 @@ namespace Entidades
             return examenes;
         }
 
+        /// <summary>
+        /// Retornar el id del profesor buscandolo por el nombre de la materia
+        /// </summary>
         public static int GetIdProfesorMateria(string nombreMateria)
         {
             int aux = 0;

@@ -29,5 +29,19 @@ namespace IO
                 streamWriter.Write(json);
             }
         }
+
+        public T? Leer(string ruta)
+        {
+            if (ValidarArchivo(ruta) && ValidarExtension(ruta))
+            {
+                using (StreamReader streamReader = new StreamReader(ruta))
+                {
+                    string json = streamReader.ReadToEnd();
+                    return JsonSerializer.Deserialize<T>(json);
+                }
+            }
+
+            return null;
+        }
     }
 }

@@ -32,6 +32,7 @@ namespace Entidades
 
         public string Gmail { get => gmail; set => gmail = value; }
         public abstract EPermisos Permisos { get; }
+        public string Pass { get => _pass; set => _pass = value; }
 
         public bool VerificarPass(string pass)
         {
@@ -90,7 +91,10 @@ namespace Entidades
         {
             return base.Equals(obj);
         }
-
+        public string RetornoPass()
+        {
+            return _pass;
+        }
     }
 
 }

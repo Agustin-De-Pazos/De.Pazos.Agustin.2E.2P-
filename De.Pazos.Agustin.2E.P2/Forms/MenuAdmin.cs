@@ -1,4 +1,5 @@
 ﻿using Entidades;
+using IO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -57,6 +58,25 @@ namespace Forms
         {
             ExportarAlumnos exportarAlumnos = new ExportarAlumnos();
             exportarAlumnos.ShowDialog();
+        }
+
+        private void btn_importar_Click(object sender, EventArgs e)
+        {
+            ExtJson<List<Alumno>> extJson = new ExtJson<List<Alumno>>();
+            List<Alumno>? aux = new List<Alumno>();
+            string aux2;
+            string rutaArchivo;
+            string nombreArchivo = "listaAlumnos.json";
+            string rutaEscritorio = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            rutaArchivo = Path.Combine(rutaEscritorio, nombreArchivo);
+            aux = extJson.Leer(rutaArchivo);
+            if(aux!.Count() != 0)
+            {
+                foreach (var item in aux)
+                {
+                    Dao.AgregarUsuario(item.Nombre, item.Apellido, item.Gmail, item.RetornoPass(), (int)item.Permisos, item.Dni);
+                }
+            }
         }
     }
 }

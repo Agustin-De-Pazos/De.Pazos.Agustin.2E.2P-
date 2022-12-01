@@ -38,6 +38,7 @@ namespace Forms
             this.btn_formAgregarMateria = new System.Windows.Forms.Button();
             this.btn_altaUsuario = new System.Windows.Forms.Button();
             this.btn_exportar = new System.Windows.Forms.Button();
+            this.btn_importar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_asignarMateriaMenu
@@ -104,13 +105,23 @@ namespace Forms
             // 
             this.btn_exportar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_exportar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btn_exportar.Location = new System.Drawing.Point(262, 377);
+            this.btn_exportar.Location = new System.Drawing.Point(391, 368);
             this.btn_exportar.Name = "btn_exportar";
-            this.btn_exportar.Size = new System.Drawing.Size(172, 77);
+            this.btn_exportar.Size = new System.Drawing.Size(227, 77);
             this.btn_exportar.TabIndex = 38;
             this.btn_exportar.Text = "Exportar Alumnos";
             this.btn_exportar.UseVisualStyleBackColor = true;
             this.btn_exportar.Click += new System.EventHandler(this.btn_exportar_Click);
+            // 
+            // btn_importar
+            // 
+            this.btn_importar.Location = new System.Drawing.Point(78, 368);
+            this.btn_importar.Name = "btn_importar";
+            this.btn_importar.Size = new System.Drawing.Size(222, 77);
+            this.btn_importar.TabIndex = 39;
+            this.btn_importar.Text = "importar Alumnos";
+            this.btn_importar.UseVisualStyleBackColor = true;
+            this.btn_importar.Click += new System.EventHandler(this.btn_importar_Click);
             // 
             // MenuAdmin
             // 
@@ -120,6 +131,7 @@ namespace Forms
             this.BackgroundImage = global::Forms.Properties.Resources.imagen1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(705, 511);
+            this.Controls.Add(this.btn_importar);
             this.Controls.Add(this.btn_exportar);
             this.Controls.Add(this.btn_altaUsuario);
             this.Controls.Add(this.btn_formAgregarMateria);
@@ -144,5 +156,6 @@ namespace Forms
         private System.Windows.Forms.Button btn_formAgregarMateria;
         private System.Windows.Forms.Button btn_altaUsuario;
         private System.Windows.Forms.Button btn_exportar;
+        private Button btn_importar;
     }
 }

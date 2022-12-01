@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="AgregarMateriaAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AgregarUsuarioAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AsignarProfesorMateriaAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AsistenciaAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CambiarRegularidadAlumnoAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CrearExamenProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DataGridAlumnosProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ExportarAlumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InscripcionAlumMaterias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MenuAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MenuAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MenuProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NotaExamen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
